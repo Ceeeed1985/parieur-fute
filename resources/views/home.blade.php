@@ -40,7 +40,7 @@
         Chacune est conçue pour répondre à vos besoins et budgets.</p>
     <div class="flex gap-10">
         
-        <div class="card w-1/3 shadow-2xl p-10 flex flex-col rounded-3xl">
+        <div class="card w-1/3 shadow-2xl p-10 flex flex-col rounded-3xl opacity-0 animate-fadeIn-on-scroll">
             <h4 class="tracking-wider text-sm font-semibold">BRONZE PACK</h4>
             <p class="text-xs">Tout ce dont tu as besoin pour commencer</p>
             <p class="text-6xl font-bold my-2">$Free</p>
@@ -52,7 +52,7 @@
             </ul>
         </div>
 
-        <div class="card w-1/3 shadow-2xl p-10 flex flex-col rounded-3xl">
+        <div class="card w-1/3 shadow-2xl p-10 flex flex-col rounded-3xl opacity-0 animate-fadeIn-on-scroll">
             <h4 class="tracking-wider text-sm font-semibold">SILVER PACK</h4>
             <p class="text-yellow-600 text-xs">Notre Best-Seller</p>
             <div class="flex">
@@ -68,7 +68,7 @@
             </ul>
         </div>
 
-        <div class="card w-1/3 shadow-2xl p-10 flex flex-col rounded-3xl">
+        <div class="card w-1/3 shadow-2xl p-10 flex flex-col rounded-3xl opacity-0 animate-fadeIn-on-scroll">
             <h4 class="tracking-wider text-sm font-semibold">OR PACK</h4>
             <p class="text-xs">Tout ce dont tu as besoin pour commencer</p>
             <div class="flex">
@@ -89,4 +89,6 @@
 
 </div>
   </div>
+
+
   @endsection
