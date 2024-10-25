@@ -26,6 +26,9 @@ export default {
             '100%': { opacity: '1' },
         },
       },
+      boxShadow:{
+        'card-blog': '0px 0px 3px 3px #C0C0C0',
+      },
     },
   },
   plugins: [
