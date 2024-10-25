@@ -1,3 +1,25 @@
+# Le Parieur Futé
+
+## Objectif du projet
+L'objectif est de créer un projet en **Laravel** qui permettront aux utilisateurs de consutler des pronostics sportifs, soit de manière payante en créant un compte, soit de manière gratuite une fois par semaine sur la page le pronostic gratuit.
+Le site se composera dès lors des éléments suivants :
+- Page d'accueil avec une navbar (Accueil, Pronostic gratuit, Nos résultats, blog, Nos formules, contact )
+- Un espace membre
+    - Possibilité de changer son mot de passe, sa photo, etc
+    - Possibilité de voir les paris que l'on a placé et donc la courbe de gains/pertes
+- Une interface d'administration, grâce à laquelle on pourra :
+    - publier de nouveaux pronostics
+    - publier des articles de blogs
+    - Modifier les formules (prix, avantages, etc.)
+
+## Ressources
+- Laravel 10
+- Tailwindcss
+- Vite
+- Alpinejs
+
+***
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
