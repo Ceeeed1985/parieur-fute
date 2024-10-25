@@ -13,6 +13,5 @@
     @include("partials.header")
     @yield("content")
 
-    <script src="{{ asset('js/fadeIn.js') }}"></script>
 </body>
 </html>
