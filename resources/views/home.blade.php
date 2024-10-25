@@ -88,22 +88,46 @@
     </div>
   </div>
   <div class="bg-gradient-to-br from-yellow-500 to-purple-500 h-96 w-full absolute z-0 top-36 border rounded-3xl flex justify-around items-end pb-7">
-    <img src="images/paypal.png" alt="Image description" class="h-10">
-    <img src="images/shopify.png" alt="Image description" class="h-10">
-    <img src="images/visa.png" alt="Image description" class="h-10">
-    <img src="images/applepay.png" alt="Image description" class="h-10">
+    <img src="images/paypal.png" alt="Image description" class="h-10 animate-bounce">
+    <img src="images/shopify.png" alt="Image description" class="h-10 animate-bounce">
+    <img src="images/visa.png" alt="Image description" class="h-10 animate-bounce">
+    <img src="images/applepay.png" alt="Image description" class="h-10 animate-bounce">
   </div>
 
 </div>
 
-<div class="bg-white text-black w-full mx-auto relative ">
-  {{-- <div class="bg-white bg-transparent text-black w-full mx-auto z-10"> --}}
-    <div class="bg-white text-black max-w-6xl mx-auto left-1/2 transform -translate-x-1/2">
-      
+<!--Troisème partie : le blog-->
+
+<div class="w-full bg-gray-100 mt-20 pt-10 ">
+  <div class="text-black max-w-6xl mx-auto">
+    <h2 class="text-7xl text-center py-5">Nos derniers articles <span class="text-yellow-600 font-semibold ">de blog</span></h2>
+    <p class="text-md text-center pb-16">Parce que gagner aux paris sportifs, c'est aussi adopter des comportements intelligents et responsables.</br>
+    Prenez la peine de lire nos articles basés sur plusieurs années d'expériences. </br>
+    C'est une mine d'or en conseils, qui peuvent réellement faire la différence entre gagner et perdre, et sur le long termes</p>
+  </div>
+</div>
+
+<div class="w-full mx-auto flex justify-center">
+  <div class="max-w-6xl flex justify-around gap-10">
+    <div class="card border-0 rounded-3xl cursor-pointer overflow-hidden pb-10">
+      <img src="" alt="" class="bg-gray-300 w-[450px] h-[220px]">
+      <h2 class="text-3xl">Titre du premier article</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, facere dolor unde eligendi placeat suscipit.</p>
     </div>
-  {{-- </div> --}}
-
-
+    
+    <div class="card border-0 rounded-3xl cursor-pointer overflow-hidden pb-10">
+      <img src="" alt="" class="bg-gray-300 w-[450px] h-[220px]">
+      <h2 class="text-3xl">Titre du premier article</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, facere dolor unde eligendi placeat suscipit.</p>
+    </div>
+    
+    <div class="card border-0 shadow-card-blog rounded-3xl cursor-pointer overflow-hidden pb-10">
+      <img src="" alt="" class="bg-gray-300 w-[450px] h-[220px]">
+      <h2 class="text-3xl">Titre du premier article</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, facere dolor unde eligendi placeat suscipit.</p>
+    </div>
+    
+  </div>
 </div>
 
 
