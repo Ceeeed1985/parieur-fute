@@ -17,6 +17,7 @@ Le site se composera dès lors des éléments suivants :
 - Tailwindcss
 - Vite
 - Alpinejs
+- Mysql
 
 ***
 
