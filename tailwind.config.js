@@ -27,7 +27,7 @@ export default {
         },
       },
       boxShadow:{
-        'card-blog': '0px 0px 3px 3px #C0C0C0',
+        'card-blog': '2px 2px 3px 3px #C0C0C0',
       },
     },
   },

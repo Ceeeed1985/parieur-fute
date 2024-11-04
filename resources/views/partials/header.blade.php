@@ -1,6 +1,6 @@
 {{-- Fichier contenant mon header et ma navigation --}}
 
-<header class="flex justify-around bg-gray-700 items-center py-2">
+<header class="flex justify-around bg-gray-800 items-center py-3">
 
 
     
@@ -8,12 +8,12 @@
 
     <nav>
         <ul class="flex justify-around text-gray-100">
-            <li class="px-4"><a href="#">Accueil</a></li>
-            <li class="px-4"><a href="#">Prono Gratuit</a></li>
-            <li class="px-4"><a href="#">Nos résultats</a></li>
-            <li class="px-4"><a href="#">Blog</a></li>
-            <li class="px-4"><a href="#">Pronos payants</a></li>
-            <li class="px-4"><a href="#">Contacts</a></li>
+            <li class="px-4 hover:border-b-2 hover:border-yellow-600 active:text-yellow-600 active:font-semibold py-3"><a href="/">Accueil</a></li>
+            <li class="px-4 hover:border-b-2 hover:border-yellow-600 py-3"><a href="#">Prono Gratuit</a></li>
+            <li class="px-4 hover:border-b-2 hover:border-yellow-600 py-3"><a href="#">Nos résultats</a></li>
+            <li class="px-4 hover:border-b-2 hover:border-yellow-600 py-3"><a href="#">Blog</a></li>
+            <li class="px-4 hover:border-b-2 hover:border-yellow-600 py-3"><a href="#">Pronos payants</a></li>
+            <li class="px-4 hover:border-b-2 hover:border-yellow-600 py-3"><a href="#">Contacts</a></li>
         </ul>
     </nav>
 
