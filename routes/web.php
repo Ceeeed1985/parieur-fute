@@ -1,7 +1,9 @@
 <?php
 
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Auth\LogInController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Auth\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +16,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Formulaire d'inscription et de connexion
+
+Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('register');
+Route::get('/login', [LogInController::class, 'showLogInForm'])->name('login');
+
+
+//Route d'entrée sur le site
 Route::get('/', [HomeController::class, 'home'])->name('home');
 

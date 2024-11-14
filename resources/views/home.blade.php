@@ -7,13 +7,13 @@
 @section('content')
 {{-- <p>bienvenue</p> --}}
 <div class="w-full bg-gray-100 pt-10">
-  <div class="flex items-end">
+  <div class="flex items-end h-[75vh]">
     <!-- Colonne 1 : Image -->
-    <div class="w-1/2 mx-auto flex flex-col items-center ">
+    <div class="w-[30%] pl-10 mx-auto flex flex-col items-center ">
       <img src="images/ronaldo.png" alt="Image description" class="w-full h-auto hidden sm:block">
     </div>
     <!-- Colonne 2 : Texte + Bouton -->
-    <div class="w-1/2 mx-20 my-10 bg-white border-0 rounded-lg flex flex-col justify-center pb-10">
+    <div class="w-[70%] mx-20 my-10 bg-white border-0 rounded-lg flex flex-col justify-center pb-10 self-start">
       <h2 class="text-2xl mb-4 bg-gray-800 text-white p-5 border-0 rounded-t-lg text-center font-bold">Parce que jamais <span class="text-yellow-600">parier</span> n’a été aussi <span class="text-yellow-600">simple !</span></h2>
       <p class="p-5 text-gray-800">Grâce au Parieur Futé, parier devient un jeu d’enfant. Fini les longues heures de recherche et d’hésitation ! Nous vous fournissons des pronostics fiables, clairs, et accessibles à tous. Plus besoin d’être un expert pour tenter votre chance, il vous suffit de suivre nos recommandations et vous êtes prêts à parier.</p>
       <h3 class="text-xl text-gray-800 px-5">Passez à la vitesse supérieure</h3>
