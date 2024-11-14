@@ -25,3 +25,6 @@ Route::get('/login', [LogInController::class, 'showLogInForm'])->name('login');
 //Route d'entrée sur le site
 Route::get('/', [HomeController::class, 'home'])->name('home');
 
+//Route vers les autres pages principales du site
+Route::get('/pronos', [HomeController::class, 'pronos'])->name('pronos');
+

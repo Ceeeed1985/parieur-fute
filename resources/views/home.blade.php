@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-    Parieur Futé | Home
+     | Home
 @endsection
 
 @section('content')
