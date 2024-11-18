@@ -11,9 +11,6 @@ class HomeController extends Controller
     {
         return view('home');
     }
-    public function pronos(): View
-    {
-        return view('pronos');
-    }
+
 
 }

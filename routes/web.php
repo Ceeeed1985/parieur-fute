@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\Auth\LogInController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PronosticController;
+use App\Http\Controllers\Auth\LogInController;
 use App\Http\Controllers\Auth\RegisterController;
 
 /*
@@ -25,6 +26,7 @@ Route::get('/login', [LogInController::class, 'showLogInForm'])->name('login');
 //Route d'entrée sur le site
 Route::get('/', [HomeController::class, 'home'])->name('home');
 
-//Route vers les autres pages principales du site
-Route::get('/pronos', [HomeController::class, 'pronos'])->name('pronos');
+//Route vers les pronostics
+Route::get('/pronos', [PronosticController::class, 'pronos'])->name('pronos');
+Route::get('/pronos/{pronostic}', [PronosticController::class, 'show'])->name('pronostics.show');
 
