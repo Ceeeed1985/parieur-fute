@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-     | S'inscrire
+     | Se connecter
 @endsection
 
 @section('content')
