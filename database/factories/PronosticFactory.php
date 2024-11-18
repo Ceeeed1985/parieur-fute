@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -16,25 +17,21 @@ class PronosticFactory extends Factory
      */
     public function definition(): array
     {
-        $date           = fake()->dateTimeThisYear()->format('Y-m-d H:i:s');
-        $sport          = fake()->randomElement(['Football', 'Basketball', 'Tennis', 'Rugby']);
-        $match          = fake()->sentence(3);
-        $pronostic      = fake()->sentence(6);
-        $cote           = fake()->randomFloat(2, 1.3, 4.00);
-        $description    = fake()->paragraph();
-        $gratuit        = fake()->boolean();
-        $publié         = fake()->boolean(); 
-        
-        return [
-            'date'        => $date,
-            'sport'       => $sport,
-            'match'       => $match,
-            'pronostic'   => $pronostic,
-            'cote'        => $cote,
-            'description' => $description,
-            'gratuit'     => $gratuit,
-            'publié'      => $publié,
+        $content = fake()->paragraphs(3, true);
 
+        return [
+            'date'        => fake()->dateTimeThisYear()->format('d-m-Y'),
+            'hours'       => fake()->time('H:i'),
+            'sport'       => fake()->randomElement(['Football', 'Basketball', 'Tennis', 'Rugby']),
+            'team1'       => fake()->word(),
+            'team2'       => fake()->word(),
+            'pronostic'   => fake()->sentence(6),
+            'cote'        => fake()->randomFloat(2, 1.3, 4.00),
+            'content'     => $content,
+            'excerpt'     => Str::limit($content, 150),
+            'thumbnail'   => fake()->imageUrl(),
+            'gratuit'     => fake()->boolean(),
+            'publié'      => fake()->boolean(),
         ];
     }
 }

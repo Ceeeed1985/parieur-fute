@@ -14,11 +14,15 @@ return new class extends Migration
         Schema::create('pronostics', function (Blueprint $table) {
             $table->id();
             $table->string('date')->nullable(false);
+            $table->string('hours')->nullable(false);
             $table->string('sport')->nullable(false);
-            $table->string('match')->nullable(false);
+            $table->string('team1')->nullable(false);
+            $table->string('team2')->nullable(false);
             $table->string('pronostic')->nullable(false);
             $table->float('cote')->nullable(false);
-            $table->longText('description')->nullable(false);
+            $table->longText('excerpt')->nullable(false);
+            $table->longText('content')->nullable(false);
+            $table->string('thumbnail')->nullable(false);
             $table->boolean('gratuit')->default(false);
             $table->boolean('publié')->nullable(false);
             $table->timestamps();
