@@ -15,9 +15,9 @@
         <div>
             <h3 class="text-sm font-semibold mb-4">Navigation</h3>
             <ul>
-                <li><a href="#" class="hover:underline">Accueil</a></li>
-                <li><a href="#" class="hover:underline">À propos</a></li>
-                <li><a href="#" class="hover:underline">Blog</a></li>
+                <li><a href="{{route('home')}}" class="hover:underline">Accueil</a></li>
+                <li><a href="{{route('pronos')}}" class="hover:underline">Pronos</a></li>
+                <li><a href="{{route('blog')}}" class="hover:underline">Blog</a></li>
                 <li><a href="#" class="hover:underline">Contact</a></li>
             </ul>
         </div>

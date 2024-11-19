@@ -27,6 +27,8 @@ Route::get('/login', [LogInController::class, 'showLogInForm'])->name('login');
 //Route d'entrée sur le site
 Route::get('/', [HomeController::class, 'home'])->name('home');
 
+//Affichage des articles de blog sur la page d'accueil
+
 //Route vers les pronostics
 Route::get('/pronos', [PronosticController::class, 'pronos'])->name('pronos');
 Route::get('/pronos/{pronostic}', [PronosticController::class, 'show'])->name('pronostics.show');

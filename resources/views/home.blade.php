@@ -146,23 +146,27 @@
   </div>
 </div>
 
+
 <div class="w-full mx-auto bg-gray-100 text-gray-800 flex justify-center pb-20">
   <div class="max-w-6xl flex justify-around gap-6">
+    @foreach($posts as $post)
     <div class="card hover:outline hover:outline-3 hover:p-1 outline-gray-800 border-0 shadow-card-blog rounded-lg bg-white cursor-pointer overflow-hidden pb-5 flex flex-col">
-      <img src="images/card-basket.jpg" alt="" class="bg-white w-[450px] h-[200px] pb-3 rounded-lg">
+      {{-- <img src="images/card-basket.jpg" alt="" class="bg-white w-[450px] h-[200px] pb-3 rounded-lg"> --}}
+      <img src="{{$post->thumbnail}}" alt="" class="bg-white w-[450px] h-[200px] pb-3 rounded-lg">
       <div class="infos-blog px-5 flex flex-col">
-        <h2 class="text-2xl text-center pb-1">Titre du 1er article</h2>
-        <p class="pb-3 text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, facere dolor unde eligendi placeat suscipit.</p>
-        <a href="#" class="bg-gray-800 text-white text-base py-2 px-8 border rounded-full text-center my-2 self-center">Lire plus</a>
+        <h2 class="text-2xl text-center pb-1">{{$post->title}}</h2>
+        <p class="pb-3 text-justify">{{$post->excerpt}}</p>
+        <a href="{{route('posts.show', ['post' => $post])}}" class="bg-gray-800 text-white text-base py-2 px-8 border rounded-full text-center my-2 self-center">Lire plus</a>
         <div class="separator border-b-2 pt-3"></div>
         <div class="infos-publication flex justify-between text-xs pt-3">
-          <span> Publié le 03/09/2024</span>
+          <span> Publié le {{$post->updated_at}}</span>
           <span>Cédric Truyen </span>
         </div>
       </div>
     </div>
+    @endforeach
 
-    <div class="card hover:outline hover:outline-3 hover:p-1 outline-gray-800 border-0 shadow-card-blog rounded-lg bg-white cursor-pointer overflow-hidden pb-5 flex flex-col">
+    {{-- <div class="card hover:outline hover:outline-3 hover:p-1 outline-gray-800 border-0 shadow-card-blog rounded-lg bg-white cursor-pointer overflow-hidden pb-5 flex flex-col">
       <img src="images/card-tennis.jpg" alt="" class="bg-white w-[450px] h-[200px] pb-3 rounded-lg">
       <div class="infos-blog px-5 flex flex-col">
         <h2 class="text-2xl text-center pb-1">Titre du 2ème article</h2>
@@ -202,7 +206,7 @@
           <span>Cédric Truyen </span>
         </div>
       </div>
-    </div>
+    </div> --}}
     
   </div>
 </div>

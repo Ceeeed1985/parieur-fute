@@ -8,7 +8,7 @@
 
     <nav>
         <ul class="flex justify-around text-gray-100">
-            <li class="px-4 hover:border-b-2 hover:border-yellow-600 active:text-yellow-600 active:font-semibold py-3"><a href="{{ url('/') }}">Accueil</a></li>
+            <li class="px-4 hover:border-b-2 hover:border-yellow-600 active:text-yellow-600 active:font-semibold py-3"><a href="{{route('home')}}">Accueil</a></li>
             <li class="px-4 hover:border-b-2 hover:border-yellow-600 py-3"><a href="{{route('pronos')}}">Nos pronos</a></li>
             <li class="px-4 hover:border-b-2 hover:border-yellow-600 py-3"><a href="#">Nos résultats</a></li>
             <li class="px-4 hover:border-b-2 hover:border-yellow-600 py-3"><a href="{{route('blog')}}">Blog</a></li>
