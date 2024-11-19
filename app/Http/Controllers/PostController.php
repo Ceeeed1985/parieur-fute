@@ -14,4 +14,11 @@ class PostController extends Controller
             'posts' => Post::latest()->paginate(10),
         ]);
     }
+
+    public function show(Post $post): View
+    {
+        return view('posts.show', [
+            'post' => $post,
+        ]);
+    }
 }

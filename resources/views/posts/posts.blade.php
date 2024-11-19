@@ -34,7 +34,7 @@
                         {{$post->excerpt}}
                     </p>
                     <!-- Bouton -->
-                    <a href="#" class="mx-auto read-more bg-yellow-600 text-white text-sm font-semibold py-2 px-4 rounded-md text-center hover:bg-yellow-700 transition duration-300">
+                    <a href="{{route('posts.show', ['post' => $post])}}" class="mx-auto read-more bg-yellow-600 text-white text-sm font-semibold py-2 px-4 rounded-md text-center hover:bg-yellow-700 transition duration-300">
                         Lire plus
                     </a>
                 </div>

@@ -19,7 +19,9 @@
             </section>
             <section class="container-infos-prono w-full bg-cover bg-center h-64 flex flex-col justify-center items-center relative" style="background-image: url('{{$pronostic->thumbnail}}')">
                 <article class="w-[300px] h-[100px] border-2 bg-gray-100 bg-opacity-40 border-white border-opacity-50 rounded-2xl backdrop-blur-md shadow-lg shadow-blue-500/50 flex justify-center items-center px-8 flex-col">
-                    <p class="pronostic text-xl font-bold text-center">{{$pronostic->pronostic}}</p>
+                    <p class="pronostic text-xl font-bold text-center">
+                        {{$pronostic->pronostic}}
+                    </p>
                 </article>
                 <article class="infos-cote absolute bottom-0 right-0 text-yellow-600 text-lg font-bold bg-gray-100 px-8 py-2 flex">
                     <p>Cote : </p>

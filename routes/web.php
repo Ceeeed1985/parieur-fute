@@ -33,3 +33,4 @@ Route::get('/pronos/{pronostic}', [PronosticController::class, 'show'])->name('p
 
 //Route vers Le Blog
 Route::get('/blog', [PostController::class, 'blog'])->name('blog');
+Route::get('/blog/{post}', [PostController::class, 'show'])->name('posts.show');
