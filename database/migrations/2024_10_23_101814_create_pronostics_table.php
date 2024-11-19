@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('sport')->nullable(false);
             $table->string('team1')->nullable(false);
             $table->string('team2')->nullable(false);
+            $table->string('slug')->nullable(false)->unique();
             $table->string('pronostic')->nullable(false);
             $table->float('cote')->nullable(false);
             $table->longText('excerpt')->nullable(false);

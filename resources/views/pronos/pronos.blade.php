@@ -28,7 +28,7 @@
             </section>
             <section class="resume py-10 px-10 text-justify">
                 <p class="pb-5">{{$pronostic->excerpt}}</p>
-                <a href="#" class="text-lg font-semibold btn-more w-full bg-gray-800 text-white py-2 flex justify-center rounded-md hover:text-yellow-600 transition-colors duration-700">Voir plus +</a>
+                <a href="{{route('pronostics.show', ['pronostic' => $pronostic])}}" class="text-lg font-semibold btn-more w-full bg-gray-800 text-white py-2 flex justify-center rounded-md hover:text-yellow-600 transition-colors duration-700">Voir plus +</a>
             </section>
         </section>
         @endforeach

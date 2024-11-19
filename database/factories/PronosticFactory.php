@@ -18,13 +18,16 @@ class PronosticFactory extends Factory
     public function definition(): array
     {
         $content = fake()->paragraphs(3, true);
+        $team1 = fake()->sentence(2);
+        $team2 = fake()->sentence(2);
 
         return [
             'date'        => fake()->dateTimeThisYear()->format('d-m-Y'),
             'hours'       => fake()->time('H:i'),
             'sport'       => fake()->randomElement(['Football', 'Basketball', 'Tennis', 'Rugby']),
-            'team1'       => fake()->word(),
-            'team2'       => fake()->word(),
+            'team1'       => $team1,
+            'team2'       => $team2,
+            'slug'        => Str::slug("$team1-vs-$team2"),
             'pronostic'   => fake()->sentence(6),
             'cote'        => fake()->randomFloat(2, 1.3, 4.00),
             'content'     => $content,
