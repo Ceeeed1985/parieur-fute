@@ -18,7 +18,7 @@
       <p class="p-5 text-gray-800">Grâce au Parieur Futé, parier devient un jeu d’enfant. Fini les longues heures de recherche et d’hésitation ! Nous vous fournissons des pronostics fiables, clairs, et accessibles à tous. Plus besoin d’être un expert pour tenter votre chance, il vous suffit de suivre nos recommandations et vous êtes prêts à parier.</p>
       <h3 class="text-xl text-gray-800 px-5">Passez à la vitesse supérieure</h3>
       <p class="p-5 text-gray-800">Inscrivez-vous dès maintenant, copiez le pari que nous vous proposons, et commencez à récolter vos gains. C’est simple, rapide et sécurisé. Ne laissez plus les opportunités vous filer entre les doigts, rejoignez notre communauté de parieurs gagnants dès aujourd’hui !</p>
-      <a href="#" class="bg-yellow-600 text-white m-auto py-2 px-4 rounded">Je passe à l'action</a>
+      <a href="{{route('register')}}" class="bg-yellow-600 text-white m-auto py-2 px-4 rounded">Je passe à l'action</a>
       <img src="ton_image.jpg" alt="Image description" class="w-full h-auto hidden sm:hidden">
     </div>
   </div>
