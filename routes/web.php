@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\PronosticController;
 use App\Http\Controllers\Auth\LogInController;
 use App\Http\Controllers\Auth\RegisterController;
@@ -30,3 +31,5 @@ Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::get('/pronos', [PronosticController::class, 'pronos'])->name('pronos');
 Route::get('/pronos/{pronostic}', [PronosticController::class, 'show'])->name('pronostics.show');
 
+//Route vers Le Blog
+Route::get('/blog', [PostController::class, 'blog'])->name('blog');
