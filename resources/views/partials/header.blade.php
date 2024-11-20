@@ -4,13 +4,13 @@
 
 
     
-    <h1 class="text-yellow-600 text-4xl font-marker"><a href="#">Parieur futé</a></h1>
+    <h1 class="text-yellow-600 text-3xl"><a href="#">Parieur <span class="fute text-gray-100">Futé</span></a></h1>
 
     <nav>
         <ul class="flex justify-around text-gray-100">
             <li class="px-4 hover:border-b-2 hover:border-yellow-600 active:text-yellow-600 active:font-semibold py-3"><a href="{{route('home')}}">Accueil</a></li>
-            <li class="px-4 hover:border-b-2 hover:border-yellow-600 py-3"><a href="{{route('pronos')}}">Nos pronos</a></li>
-            <li class="px-4 hover:border-b-2 hover:border-yellow-600 py-3"><a href="#">Nos résultats</a></li>
+            <li class="px-4 hover:border-b-2 hover:border-yellow-600 py-3"><a href="{{route('pronos')}}">Pronos</a></li>
+            <li class="px-4 hover:border-b-2 hover:border-yellow-600 py-3"><a href="#">Résultats</a></li>
             <li class="px-4 hover:border-b-2 hover:border-yellow-600 py-3"><a href="{{route('blog')}}">Blog</a></li>
             <li class="px-4 hover:border-b-2 hover:border-yellow-600 py-3"><a href="#">Contacts</a></li>
         </ul>
