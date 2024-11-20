@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admin\HomeController as AdminHomeController;
+use App\Http\Controllers\Admin\PronosticController as AdminPronosticController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
@@ -36,3 +38,11 @@ Route::get('/pronos/{pronostic}', [PronosticController::class, 'show'])->name('p
 //Route vers Le Blog
 Route::get('/blog', [PostController::class, 'blog'])->name('blog');
 Route::get('/blog/{post}', [PostController::class, 'show'])->name('posts.show');
+
+
+//PARTIE ADMIN
+
+Route::get('/admin', [AdminHomeController::class, 'home'])->name('admin.home');
+
+//Route vers la partie "gestion des pronostics"
+Route::resource('/admin/pronostics', AdminPronosticController::class)->except('show')->names('admin.pronostics');
