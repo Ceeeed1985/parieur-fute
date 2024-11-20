@@ -2,16 +2,20 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
 use App\Models\Pronostic;
+use Illuminate\View\View;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Storage;
 
 class PronosticController extends Controller
 {
 
-    public function index()
+    public function index(): View
     {
-        return view()
+        return view('admin.pronos.index', [
+            'pronostics' => Pronostic::without('category')->latest()->get(),
+        ]);
     }
 
 
@@ -42,6 +46,8 @@ class PronosticController extends Controller
 
     public function destroy(Pronostic $pronostic)
     {
-        //
+        Storage::delete($pronostic->thumbnail);
+        $pronostic->delete();
+        return redirect()->route('admin.pronostics.index')->with('success', 'Pronostic supprimé avec succès.');
     }
 }

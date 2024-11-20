@@ -1,9 +1,9 @@
-<section class="left w-[300px] flex flex-col">
-    <nav class="w-[300px]">
+<section class="left w-[30%] flex flex-col">
+    <nav>
         <ul class="flex flex-col justify-around border bg-slate-100">
             <li class="bg-yellow-600 py-3 text-white text-xl font-semibold text-center">MENU</li>
             <li class="px-4 hover:border-b-2 hover:border-yellow-600  hover:bg-yellow-50 active:text-yellow-600 active:font-semibold py-3"><a href="{{route('admin.home')}}">Accueil Admin</a></li>
-            <li class="px-4 hover:border-b-2 hover:border-yellow-600  hover:bg-yellow-50 active:text-yellow-600 active:font-semibold py-3"><a href="#">Vos pronostics</a></li>
+            <li class="px-4 hover:border-b-2 hover:border-yellow-600  hover:bg-yellow-50 active:text-yellow-600 active:font-semibold py-3"><a href="{{route('admin.pronostics.index')}}">Vos pronostics</a></li>
             <li class="px-4 hover:border-b-2 hover:border-yellow-600  hover:bg-yellow-50 active:text-yellow-600 active:font-semibold py-3"><a href="#">Vos résultats</a></li>
             <li class="px-4 hover:border-b-2 hover:border-yellow-600  hover:bg-yellow-50 active:text-yellow-600 active:font-semibold py-3"><a href="#">Vos articles de blog</a></li>
             <li class="px-4 hover:border-b-2 hover:border-yellow-600  hover:bg-yellow-50 active:text-yellow-600 active:font-semibold py-3"><a href="#">Vos messages</a></li>
