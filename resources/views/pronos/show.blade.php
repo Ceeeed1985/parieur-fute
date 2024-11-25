@@ -8,7 +8,7 @@
 @section('content')
     <h1 class="text-3xl text-center pt-5 pb-12">Page des pronostics</h1>
     <section class="container-pronos w-full flex justify-center gap-10 py-10 flex-wrap">
-        <section class="cards-pronos w-[400px] rounded-lg shadow-xl mb-10">
+        <section class="cards-pronos w-[600px] rounded-lg shadow-xl mb-10">
             <section class="bg-gray-800 py-3 rounded-t-lg flex flex-col justify-center items-center">
                 <h2 class="text-yellow-600 text-3xl font-bold">{{ $pronostic->sport}}</h2>
                 <article class="text-lg text-gray-100 font-bold">

@@ -19,9 +19,9 @@ class PronosticController extends Controller
     }
 
 
-    public function create()
+    public function create(): View
     {
-        //
+        return view('admin.pronos.form');
     }
 
 
